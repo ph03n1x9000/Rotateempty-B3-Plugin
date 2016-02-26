@@ -37,7 +37,7 @@ class RotateemptyPlugin(b3.plugin.Plugin):
         self.registerEvent('EVT_CLIENT_DAMAGE', self.onaction)
         self.registerEvent('EVT_CLIENT_DAMAGE_SELF', self.onaction)
         self.registerEvent('EVT_GAME_MAP_CHANGE', self.onaction)
-
+        self._actiontime = self.console.time()
         snt(self.startchecking, ())
 
     def onaction(self, event):
