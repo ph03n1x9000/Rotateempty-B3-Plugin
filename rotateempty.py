@@ -28,7 +28,7 @@ from thread import start_new_thread as snt
 
 class RotateemptyPlugin(b3.plugin.Plugin):
     requiresConfigFile = False
-    _actiontime = None
+    _actiontime = 0
     waitdelay = 180
 
     def onStartup(self):
